@@ -3,7 +3,7 @@ export default defineNuxtConfig({
 	apollo: {
         clients: {
             default: {
-                httpEndpoint: 'https://fivepetalfields.com/server/graphql'
+                httpEndpoint: 'https://fivepetalfields.com/server/graphql' || 'https://wp.fivepetalfields.com/graphql'
             }
         }
     },
@@ -26,7 +26,7 @@ export default defineNuxtConfig({
 
 	image: {
 		// Options
-		format: ['webp']
+		// format: ['webp']
 	},
 
     modules: [
@@ -57,9 +57,7 @@ export default defineNuxtConfig({
 
     runtimeConfig: {
         public: {
-            API_URL: 'https://fivepetalfields.com/server/graphql',
-            // GQL_HOST: 'http://fivepetalfieldsdotcom.local/graphql',
-            // GQL_TOKEN: 'Basic Zml2ZXBldGFsOjEyMzRhQkNk',
+            API_URL: 'https://fivepetalfields.com/server/graphql' || 'https://wp.fivepetalfields.com/graphql',
             colorMode: {
                 classSuffix: ''
             },

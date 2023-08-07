@@ -16,7 +16,7 @@
 
 <template>
     <span class="sr-only">Five Petal Fields</span>
-    <nuxt-img
+    <img
         v-if="$colorMode.value === 'light'"
         :class="classes"
         src="/assets/images/fivepetal-logo.svg"
@@ -24,7 +24,7 @@
 		width="181"
 		height="57"
     />
-    <nuxt-img
+    <img
         v-else
         :class="classes"
         src="/assets/images/fivepetal-logo-dark.svg"
