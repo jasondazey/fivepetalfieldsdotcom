@@ -1,0 +1,61 @@
+query getPost($slug: String!) {
+    postBy(slug: $slug) {
+        blocks {
+            ... on CoreHeadingBlock {
+                attributes {
+                    ... on CoreHeadingBlockAttributes {
+                        content
+                        level
+                    }
+                }
+            }
+            ... on CoreHtmlBlock {
+                originalContent
+            }
+			... on CoreImageBlock {
+				mediaItem {
+					node {
+						srcSet
+						sourceUrl
+						caption
+					}
+				}
+			}
+            ... on CoreListBlock {
+                innerBlocks {
+                    ... on CoreListItemBlock {
+                        attributes {
+                            content
+                        }
+                    }
+                }
+            }
+            ... on CoreParagraphBlock {
+                attributes {
+                    ... on CoreParagraphBlockAttributes {
+                        content
+                    }
+                }
+            }
+        }
+        date
+        featuredImage {
+            node {
+				srcSet
+				sourceUrl
+				caption
+			}
+        }
+        seo {
+            metaDesc
+            opengraphImage {
+                mediaItemUrl
+				sourceUrl
+				srcSet
+            }
+            readingTime
+            title
+        }
+        title
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "devDependencies": {
+        "@nuxt/devtools": "^0.7.1",
+        "@nuxt/image": "^1.0.0-rc.1",
+        "@nuxtjs/apollo": "^5.0.0-alpha.6",
+        "nuxt": "^3.6.5"
+    },
+    "dependencies": {
+        "@headlessui/vue": "^1.7.14",
+        "@nuxtjs/color-mode": "^3.3.0",
+        "@nuxtjs/tailwindcss": "^6.8.0",
+        "@tailwindcss/typography": "^0.5.9",
+        "add": "^2.0.6",
+        "nuxt-gtag": "^0.5.7",
+        "nuxt-headlessui": "^1.1.4",
+        "nuxt-icons": "^3.2.0",
+        "yarn": "^1.22.19"
+    }
+}

@@ -1,0 +1,34 @@
+query getFeaturedPosts($categoryName: String!) {
+    posts(
+        first: 3
+        where: {
+            categoryName: $categoryName
+            orderby: { field: DATE, order: DESC }
+        }
+    ) {
+        nodes {
+            categories {
+                nodes {
+                    name
+                }
+            }
+            date
+            excerpt
+            featuredImage {
+                node {
+					srcSet
+					sourceUrl
+					caption
+				}
+            }
+            id
+            seo {
+                metaDesc
+                readingTime
+                title
+            }
+            slug
+            title
+        }
+    }
+}

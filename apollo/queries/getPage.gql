@@ -1,0 +1,135 @@
+query getPages($uri: String!) {
+	pageBy(uri: $uri) {
+		blocks {
+			... on CoreGroupBlock {
+				attributes {
+					... on CoreGroupBlockAttributes {
+						anchor
+						tagName
+						className
+					}
+				}
+				innerBlocks {
+					... on CoreColumnsBlock {
+						attributes {
+							... on CoreColumnsBlockAttributes {
+								anchor
+							}
+						}
+						innerBlocks {
+							... on CoreColumnBlock {
+								attributes {
+									... on CoreColumnBlockAttributes {
+										anchor
+										className
+									}
+								}
+								innerBlocks {
+									... on CoreButtonsBlock {
+										innerBlocks {
+											... on CoreButtonBlock {
+												attributes {
+													... on CoreButtonBlockAttributes {
+														rel
+														text
+														url
+														linkTarget
+													}
+												}
+											}
+										}
+									}
+									... on CoreHeadingBlock {
+										attributes {
+											... on CoreHeadingBlockAttributes {
+												content
+												level
+												className
+											}
+										}
+									}
+									... on CoreImageBlock {
+										mediaItem {
+											node {
+												srcSet
+												sourceUrl
+												caption
+											}
+										}
+									}
+									... on CoreListBlock {
+										attributes {
+											... on CoreListBlockAttributes {
+												className
+											}
+										}
+										innerBlocks {
+											... on CoreListItemBlock {
+												attributes {
+													content
+												}
+											}
+										}
+									}
+									... on CoreParagraphBlock {
+										attributes {
+											... on CoreParagraphBlockAttributes {
+												content
+												anchor
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					... on CoreHeadingBlock {
+						attributes {
+							... on CoreHeadingBlockAttributes {
+								content
+								level
+								className
+							}
+						}
+					}
+					... on CoreImageBlock {
+						mediaItem {
+							node {
+								srcSet
+								sourceUrl
+								caption
+							}
+						}
+					}
+					... on CoreListBlock {
+						innerBlocks {
+							... on CoreListItemBlock {
+								attributes {
+									content
+								}
+							}
+						}
+					}
+					... on CoreParagraphBlock {
+						attributes {
+							... on CoreParagraphBlockAttributes {
+								content
+							}
+						}
+					}
+					... on CoreSeparatorBlock {
+						originalContent
+					}
+				}
+			}
+		}
+		id
+		title
+		seo {
+			metaDesc
+			title
+		}
+		slug
+		uri
+	}
+}

@@ -1,0 +1,64 @@
+query getHero($uri: String!) {
+	pageBy(uri: $uri) {
+		blocks {
+			... on CoreColumnsBlock {
+				attributes {
+					... on CoreColumnsBlockAttributes {
+						anchor
+					}
+				}
+				innerBlocks {
+					... on CoreColumnBlock {
+						attributes {
+							... on CoreColumnBlockAttributes {
+								anchor
+							}
+						}
+						innerBlocks {
+							... on CoreButtonsBlock {
+								innerBlocks {
+									... on CoreButtonBlock {
+										attributes {
+											... on CoreButtonBlockAttributes {
+												linkTarget
+												text
+												url
+											}
+										}
+									}
+								}
+							}
+							... on CoreHeadingBlock {
+								attributes {
+									... on CoreHeadingBlockAttributes {
+										content
+										level
+									}
+								}
+							}
+							... on CoreImageBlock {
+								mediaItem {
+									node {
+										mediaItemUrl
+										caption(format: RENDERED)
+									}
+								}
+							}
+							... on CoreParagraphBlock {
+								attributes {
+									... on CoreParagraphBlockAttributes {
+										content
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		id
+		title
+		slug
+		uri
+	}
+}

@@ -1,0 +1,28 @@
+query getAllPosts {
+    posts {
+        nodes {
+            categories {
+                nodes {
+                    name
+                }
+            }
+            date
+            excerpt
+            featuredImage {
+                node {
+                    srcSet
+					sourceUrl
+					caption
+                }
+            }
+            id
+            seo {
+                metaDesc
+                readingTime
+                title
+            }
+            slug
+            title
+        }
+    }
+}
