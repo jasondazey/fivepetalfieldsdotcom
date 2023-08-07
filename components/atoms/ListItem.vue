@@ -5,7 +5,7 @@
         color: {
             type: String,
             required: false,
-            default: 'text-lavender-600 dark:text-white',
+            default: 'text-lavender-700 dark:text-white',
         }
     })
 

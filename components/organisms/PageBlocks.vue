@@ -85,7 +85,7 @@
 									v-if="copy.__typename === 'CoreHeadingBlock' && copy.attributes.level === 4"
 									tag="h4"
 									font-size="h6"
-									class="text-lavender-600 dark:text-white uppercase tracking-wide font-semibold"
+									class="text-lavender-700 dark:text-white uppercase tracking-wide font-semibold"
 									v-slot:text
 									v-html="copy.attributes.content"
 								/>

@@ -17,7 +17,10 @@
             rounded-lg
             bg-white dark:bg-slate-800
     ">
-        <NuxtLink :to="`/articles/${article.slug}`">
+        <NuxtLink
+			:to="`/articles/${article.slug}`"
+			:aria-label="'Read more about '+article.title"
+		>
             <AtomsImage
                 :srcSet="article.featuredImage.node.srcSet"
 				:src="article.featuredImage.node.sourceUrl"
@@ -27,6 +30,7 @@
                     max-h-60
                     rounded-lg lg:rounded-b-none
                 "
+				alt=""
             />
         </NuxtLink>
 
@@ -57,7 +61,7 @@
                 <AtomsText
                     tag="p"
                     font-style="tag"
-					color="bg-stem-400 dark:bg-slate-700 text-white"
+					color="bg-stem-800 dark:bg-slate-700 text-white"
                     v-slot:text
                 >
                     {{ article.categories.nodes[0].name }}

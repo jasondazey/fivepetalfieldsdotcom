@@ -54,11 +54,12 @@
                 h-full
                 hover:opacity-60
 				hover:scale-110
-				transition
+				transition-all
 				duration-300
 				ease-in-out
             "
             :class="classes"
+			loading="lazy"
         />
         <figcaption
             class="

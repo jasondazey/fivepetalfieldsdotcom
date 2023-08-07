@@ -27,6 +27,7 @@
 				:caption="card.mediaItem.node.caption"
 				ratio="aspect-video"
 				class="rounded-lg lg:rounded-b-none"
+				alt=""
 			/>
 		</template>
 
@@ -77,7 +78,7 @@
 							:target="button.attributes.linkTarget"
 							:rel="button.attributes.rel"
 							theme="card"
-							color="hover:text-white dark:hover:text-slate-800 hover:px-2 before:bg-lavender-600 dark:before:bg-white"
+							color="hover:text-white dark:hover:text-slate-800 hover:px-2 before:bg-lavender-700 dark:before:bg-white"
 						>
 							<template v-slot:default>
 								<span class="relative z-10">{{ button.attributes.text }}</span>

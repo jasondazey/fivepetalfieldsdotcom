@@ -77,7 +77,7 @@
                             <AtomsLogo size="normal" />
                         </NuxtLink>
 
-                        <div class="text-slate-500 dark:text-white text-base py-2">© {{ currentYear }}, All rights reserved.</div>
+                        <div class="text-slate-800 dark:text-white text-base py-2">© {{ currentYear }}, All rights reserved.</div>
                     </div>
 
                     <div

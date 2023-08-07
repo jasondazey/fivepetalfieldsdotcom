@@ -16,16 +16,20 @@
 
 <template>
     <span class="sr-only">Five Petal Fields</span>
-    <img
+    <nuxt-img
         v-if="$colorMode.value === 'light'"
         :class="classes"
         src="/assets/images/fivepetal-logo.svg"
         alt="Five Petal Fields"
+		width="181"
+		height="57"
     />
-    <img
+    <nuxt-img
         v-else
         :class="classes"
         src="/assets/images/fivepetal-logo-dark.svg"
         alt="Five Petal Fields"
+		width="181"
+		height="57"
     />
 </template>

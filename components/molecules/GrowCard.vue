@@ -27,6 +27,7 @@
 				:caption="card.mediaItem.node.caption"
 				ratio="aspect-video"
 				class="rounded-lg lg:rounded-b-none"
+				alt=""
 			/>
 		</template>
 

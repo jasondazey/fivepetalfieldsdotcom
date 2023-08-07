@@ -93,14 +93,14 @@
                         <Popover v-if="item.type === 'WRAPPER'" class="relative" v-slot="{ open }">
                             <PopoverButton
                                 :class="[
-                                    open ? 'bg-lavender-500 text-white dark:bg-slate-800' : 'text-lavender-600 dark:text-white hover:bg-lavender-200 dark:hover:bg-slate-800',
+                                    open ? 'bg-lavender-500 text-white dark:bg-slate-800' : 'text-lavender-700 dark:text-white hover:bg-lavender-200 dark:hover:bg-slate-800',
                                     'group inline-flex items-center rounded-md px-2 text-lg font-medium focus:outline-none focus:ring-2 focus:ring-lavender-500 dark:focus:ring-slate-800 focus:ring-offset-2',
                                 ]"
                             >
                                 <span>{{ item.title }}</span>
                                 <LazyNuxtIcon
                                     :class="[
-                                        open ? 'bg-lavender-500 text-white dark:bg-slate-800' : 'text-lavender-600 dark:text-white',
+                                        open ? 'bg-lavender-500 text-white dark:bg-slate-800' : 'text-lavender-700 dark:text-white',
                                         'ml-2 h-5 w-5',
                                     ]"
                                     name="ChevronDown" filled
@@ -172,7 +172,7 @@
                                 text-lg font-medium
                                 rounded-md
                                 px-2
-                                text-lavender-600 dark:text-white hover:bg-lavender-200 dark:hover:bg-slate-800
+                                text-lavender-700 dark:text-white hover:bg-lavender-200 dark:hover:bg-slate-800
                             "
                         >
                             {{ item.title }}
@@ -183,7 +183,7 @@
                 <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
                     <a
                         href="mailto:hello@fivepetalfields.com"
-                        class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-transparent bg-lavender-600 dark:bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-lavender-700 dark:hover:bg-slate-600 transition-all duration-300 ease-in-out"
+                        class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-transparent bg-lavender-700 dark:bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-lavender-700 dark:hover:bg-slate-600 transition-all duration-300 ease-in-out"
                         >Contact us</a
                     >
 
@@ -232,7 +232,7 @@
                                     <template v-if="item.type === 'WRAPPER'">
                                         <p class="
                                             text-lg font-medium
-                                            text-lavender-600 dark:text-white hover:text-lavender-800
+                                            text-lavender-700 dark:text-white hover:text-lavender-800
                                             "
                                         >
                                             {{ item.title }}
@@ -266,7 +266,7 @@
 										:target="item.target"
                                         class="
                                             text-lg font-medium
-                                            text-lavender-600 dark:text-white hover:text-lavender-800
+                                            text-lavender-700 dark:text-white hover:text-lavender-800
                                         "
                                     >
                                         {{ item.title }}
@@ -277,7 +277,7 @@
                             <div>
                                 <a
                                     href="mailto:hello@fivepetalfields.com"
-                                    class="flex w-full items-center justify-center rounded-full border border-transparent bg-lavender-600 dark:bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-lavender-700 dark:hover:bg-slate-600"
+                                    class="flex w-full items-center justify-center rounded-full border border-transparent bg-lavender-700 dark:bg-slate-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-lavender-700 dark:hover:bg-slate-600"
                                     >Contact us</a
                                 >
                             </div>

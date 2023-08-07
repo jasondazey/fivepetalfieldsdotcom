@@ -56,6 +56,7 @@
 											aspect-[3/4]
 											rounded-lg
 										"
+										alt=""
 									/>
 								</template>
 
@@ -78,6 +79,7 @@
 											aspect-[3/4]
 											rounded-lg
 										"
+										alt=""
 									/>
 								</template>
 

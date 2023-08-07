@@ -20,7 +20,7 @@
             'small': 'text-base px-4 py-2 rounded-full',
             'primary': 'bg-stem-100 dark:bg-slate-700 text-stem-900 dark:text-white hover:text-white before:bg-stem-800 dark:before:bg-slate-900',
             'secondary': 'bg-white text-lavender-800 before:bg-lavender-300',
-            'card': 'font-semibold text-lavender-600 dark:text-white px-0 py-0 mt-0'
+            'card': 'font-semibold text-lavender-700 dark:text-white px-0 py-0 mt-0'
         }
         return ` ${themeClasses[props.theme]} ${props.color}`;
     })

@@ -16,47 +16,6 @@ body {
     @apply bg-white dark:bg-slate-900
 }
 
-@keyframes fadeIn {
-	0% {
-		opacity: 0.001;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-@keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0.001;
-	}
-}
-
-.page-enter-active,
-.page-leave-active {
-	transition: opacity 250ms;
-}
-
-.page-enter,
-.page-leave-to {
-	opacity: 0;
-}
-
-.page-enter-active {
-	animation-duration: 250ms;
-	animation-name: fadeIn;
-	animation-timing-function: linear;
-	backface-visibility: hidden;
-}
-
-.page-leave-active {
-	animation-name: fadeOut;
-	animation-duration: 0.25s;
-}
-
 /* Tailwind is not working correctly */
 h1 span,
 h2 span {
@@ -77,39 +36,14 @@ h2 span {
     width: 100% !important;
 }
 
-/* .list .group {
-    @apply grid grid-cols-8 gap-4;
-}
-
-.list .group > div:nth-child(1) {
-    @apply col-span-2;
-}
-
-.list .group > div:nth-child(2) {
-    @apply col-span-6;
-} */
-
 .group h3 a {
-    @apply cursor-pointer leading-7 transition-all duration-300 ease-in-out text-lavender-600 hover:text-lavender-400 dark:text-white
+    @apply cursor-pointer leading-7 transition-all duration-300 ease-in-out text-lavender-700 hover:text-lavender-400 dark:text-white
 }
-
-/*
-.prose ul li {
-    @apply pl-6 mb-2 relative
-}
-
-.prose ul li:before {
-    @apply absolute left-0 top-1.5 w-4 h-4 dark:invert;
-    content: '';
-	background-repeat: no-repeat;
-	background-image: url('~/assets/icons/CheckMark.svg')
-}
-*/
 
 .prose li p {
     @apply inline-block m-0
 }
 
 .prose a {
-    @apply no-underline font-semibold text-lavender-600 hover:text-white dark:text-white dark:hover:text-lavender-900 bg-gradient-to-b from-lavender-600 dark:from-white to-lavender-600 dark:to-white bg-link hover:bg-link-hover bg-left-bottom bg-no-repeat transition-all duration-300 ease-in-out
+    @apply no-underline font-semibold text-lavender-700 hover:text-white dark:text-white dark:hover:text-lavender-900 bg-gradient-to-b from-lavender-700 dark:from-white to-lavender-700 dark:to-white bg-link hover:bg-link-hover bg-left-bottom bg-no-repeat transition-all duration-300 ease-in-out
 }

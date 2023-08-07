@@ -44,6 +44,7 @@
 							radius="radiusFull"
 							ratio="aspect-square"
 							class="w-3/4 mx-auto mb-8 md:mb-0"
+							alt=""
 						/>
 					</template>
 				</div>

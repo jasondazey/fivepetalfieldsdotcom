@@ -1,10 +1,33 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	apollo: {
+        clients: {
+            default: {
+                httpEndpoint: 'https://fivepetalfields.com/server/graphql'
+            }
+        }
+    },
+
+	colorMode: {
+        classSuffix: ''
+    },
+
     css: [
         '~/assets/css/tailwind.css'
     ],
 
-    devtools: { enabled: false },
+    devtools: {
+		enabled: false
+	},
+
+	gtag: {
+        id: 'G-M47XT7CX4K'
+    },
+
+	image: {
+		// Options
+		format: ['webp']
+	},
 
     modules: [
         // https://apollo.nuxtjs.org
@@ -28,27 +51,6 @@ export default defineNuxtConfig({
         // https://tailwindcss.nuxt.dev/
         '@nuxtjs/tailwindcss'
     ],
-
-    apollo: {
-        clients: {
-            default: {
-                httpEndpoint: 'https://fivepetalfields.com/server/graphql'
-            }
-        }
-    },
-
-    colorMode: {
-        classSuffix: ''
-    },
-
-    gtag: {
-        id: 'G-M47XT7CX4K'
-    },
-
-	image: {
-		// Options
-		format: ['webp']
-	},
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [],
