@@ -3,7 +3,7 @@ export default defineNuxtConfig({
 	apollo: {
         clients: {
             default: {
-                httpEndpoint: 'https://fivepetalfields.com/server/graphql' || 'https://wp.fivepetalfields.com/graphql'
+                httpEndpoint: 'https://wp.fivepetalfields.com/graphql'
             }
         }
     },
@@ -57,7 +57,7 @@ export default defineNuxtConfig({
 
     runtimeConfig: {
         public: {
-            API_URL: 'https://fivepetalfields.com/server/graphql' || 'https://wp.fivepetalfields.com/graphql',
+            API_URL: 'https://wp.fivepetalfields.com/graphql',
             colorMode: {
                 classSuffix: ''
             },
